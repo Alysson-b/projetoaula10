@@ -1,0 +1,58 @@
+button{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 13px;
+    border: none;
+    background-color: rgba(25, 106, 211, 0.781);
+    color: white;
+    transition: width 0.5s ease;
+    position: relative; 
+    overflow: hidden; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: justify-content 0.6s ease;
+    
+}
+button:hover {
+    justify-content: space-around;
+}
+  
+button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 3px;
+    background-color: white; 
+    transition: width 0.5s ease; 
+} 
+button img.set {
+    margin-left: 10px;
+    height: 10px;
+    width: 40px;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+button:hover img.set {
+    opacity: 1; 
+}
+button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+
+button:hover:after {
+    width: 100%; 
+}
