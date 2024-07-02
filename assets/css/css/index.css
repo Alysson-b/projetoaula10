@@ -25,6 +25,7 @@ body{
     gap: 5px;
 }
 .img{
+    border-radius: 25px;
     overflow: hidden;
 }
 h1{
@@ -47,7 +48,6 @@ p{
 img{
     display: flex;
     width: 100vh;
-    border-radius: 25px;
     max-width: 100%;
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
